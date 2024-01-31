@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>מיקמק - אפליקציות</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="מישחקים, משחקים, משחקים ברשת, משחקים לילדים, משחק, משחקי אונליין , משחקים בנות, Games, Webkinz, משחקים חדשים, משחקי בנות, מכוניות משחקים, אתר משחקים, אווטר, אוטר, אווטר משחקים, מיקמק, מיקמיק, מיקמיק עולם וירטואלי">
+<meta name="expires" content="never">
+<meta name="language" content="hebrew">
+<meta name="distribution" content="Global">
+<meta name="robots" content="index, follow">
+<link rel="SHORTCUT ICON" href="../favicon.ico">
+
+<link href="../css/global3.css" rel="stylesheet" type="text/css">	
+
+<style type="text/css">
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align:right;
+	margin:0px;
+	color: #000;
+	background: #0E4291 url(../images/apps/bg_page.jpg) top no-repeat;
+}
+
+.bg_image
+{
+	background-image:url(../images/apps/bg2000.jpg);
+	background-repeat:no-repeat;
+	width:806px;
+	height:2100px;
+	position:relative;
+	top:-54px;
+	left:-1px;	
+}
+
+.bg_image_mobile
+{
+	background-image:url(../images/apps/bg.jpg);
+	background-repeat:no-repeat;
+	width:806px;
+	height:2200px;
+	position:relative;
+	top:-64px;
+	left:-1px;	
+}
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript" src="../js/newPostVar.js"></script>
+<script type="text/javascript">
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+	    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+	    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+	    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}	
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}	
+
+	function isMobile() 
+	{
+		if( navigator.userAgent.match(/Android/i)
+		 || navigator.userAgent.match(/webOS/i)
+		 || navigator.userAgent.match(/iPhone/i)
+		 || navigator.userAgent.match(/iPad/i)
+		 || navigator.userAgent.match(/iPod/i)
+		 || navigator.userAgent.match(/BlackBerry/i)
+		 || navigator.userAgent.match(/Windows Phone/i)
+		 ){
+		    return true;
+		  }
+		 else {
+		    return false;
+		  }
+	}
+</script>
+
+<div id="menuSite" align="center" class="menuHTML">
+
+		<table style="width:100%;background-repeat:repeat-x; background-image:url('../images/mainheader_bg.png');" cellpadding="0" cellspacing="0" dir="rtl">
+			<tr>
+			
+				<td width="35%" style="padding-left:45px" align="left"> 
+				  <a href="http://play.mikmak.co.il" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btnh0','','/images/play2_h.png',1)">
+				     <img id="btnh0" src="../images/play2.png" width="205" height="62" alt="התחל לשחק" style="padding-bottom:3px">
+				  </a>				
+				</td>
+
+				 <td align="center" width="35%"> 
+
+					   <table width="100%" align="center" style="padding-bottom:30px" cellpadding="2">
+					     <tr>
+					       <td width="120">
+							  <div style="width:11px; height:11px; position:relative; top:2px; right:37px;">
+							    <img id="saleNotification" style="display:none;" src="../images/notificationSmall.png" width="11" height="11">
+							  </div>
+							  <div style="position:relative; bottom:5px;">
+								  <a id="headerStore" href="../store/index.htm" class="mainHeader">חנות</a>
+							  </div>	  							  
+					       </td>
+					       <td width="160" style="min-width:70px;">
+							  <div style="width:11px; height:11px; position:relative; top:2px; right:67px;">
+							    <img id="blogNotification" style="display:none;" src="../images/notificationSmall.png" width="11" height="11">
+							  </div>
+							  <div style="position:relative; bottom:5px;">
+								  <a id="headerBlog" href="../html/whatsnew.html" class="mainHeader">מה חדש</a>
+							  </div>	  
+					       </td>
+					       <td width="145">
+							  <a id="headerGallery" href="../html/gallery.html" class="mainHeader">קהילה</a>
+					       </td>
+					       <td width="160">
+							  <a id="headerApps" href="index.htm" class="mainHeader">אפליקציות</a>
+					       </td>
+					       <td width="140">
+							  <a id="headerMembers" href="../servlet/productList?ctg=2&src=site_headerS" class="mainHeader">מנויים</a>
+					       </td>
+					       <td width="140">
+							  <a id="headerParents" href="../html/parents/index.htm" class="mainHeader">הורים</a>
+					       </td>
+					       <td width="150">
+							  <a id="headerHelp" href="../html/help/faq.html" class="mainHeader">
+							   עזרה
+							  </a>
+					       </td>
+				        </tr>
+				   </table>
+				 </td>
+
+				<td width="30%" align="right" style="padding-right:10px;">
+				  <a href="../index.htm">
+				   <img id="btnh7" src="../images/logo2.png" width="260" height="130" alt="מיקמק">
+				  </a>
+				</td>
+    	  </tr>
+    	 </table> 
+	</div>
+
+
+<script>	
+  if (saleday || newPost)
+  {
+     if (saleday)
+       document.getElementById("saleNotification").style.display='';
+     if (newPost)
+       document.getElementById("blogNotification").style.display='';
+  }
+
+
+  document.getElementById("headerApps").className= "mainHeader mainHeaderHover";
+</script><table border="0" align="center" cellpadding="0" cellspacing="0" class="tb_center2">
+  <tr>
+    <td>
+    
+
+<div id="bg_image" class="bg_image">
+
+    <table border="0" cellpadding="0" cellspacing="0" class="td_title_no_frame">
+      <tr>
+    <td valign="top">
+   
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td height="22"></td>
+			</tr>	
+			<tr>
+				<td align="center">
+				 <img alt="" height="271" src="../images/apps/logo.png" width="689">
+				</td>
+			</tr>	
+			<tr>
+				<td height="30" align="center">
+				<img alt="" height="41" src="../images/apps/header.png" width="568"></td>
+			</tr>	
+
+	<tr>
+		<td align="center">
+		<table style="width: 80%;">
+
+			<tr>
+				<td height="37"></td>
+			</tr>	
+
+			<tr>
+				<td>
+				<table style="width: 708px; height:252px; background-image:url('../images/apps/mikmak2.png');">
+					<tr><td height="130" style="width: 248px"></td></tr>									
+					<tr>
+						<td style="width: 248px" align="center">
+		        		  <a href="mikmak2/index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image193','','/images/apps/download_btn_h.png',1)"><img src="../images/apps/download_btn.png" name="Image193" border="0" id="Image193" height="58" width="169"></a>
+						</td>
+						<td style="width: 210px; padding-right:34px">
+						<table style="width: 100%" align="right">
+							<tr>
+								<td width="60" align="right" style="padding-right:10px">
+				        		  <a href="https://apps.apple.com/il/app/%D7%9E%D7%99%D7%A7%D7%9E%D7%A7-2/id1608856171" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image31','','/images/apps/apple_btn_h.png',1)"><img src="../images/apps/apple_btn.png" name="Image31" border="0" id="Image31" height="48" width="42"></a>
+								</td>
+								<td align="center" style="width: 70px;">
+				        		  <a href="https://play.google.com/store/apps/details?id=com.dic.mikmak2&gl=IL" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Imagea212','','/images/apps/android_btn_h.png',1)"><img src="../images/apps/android_btn.png" name="Imagea212" border="0" id="Imagea212" height="49" width="42"></a>
+								</td>
+								<td width="60" align="right" style="padding-right:10px">
+				        		  <a href="mikmak2/index-1.htm?download=1" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image211','','/images/apps/pc_btn_h.png',1)"><img src="../images/apps/pc_btn.png" name="Image211" border="0" id="Image211" height="48" width="46"></a>
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td width="190"></td>
+					</tr>
+				</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td height="37"></td>
+			</tr>	
+
+
+			<tr>
+				<td>
+				<table style="width: 708px; height:252px; background-image:url('../images/apps/york.png');">
+					<tr><td style="width: 248px; height: 130px;"></td></tr>									
+					<tr>
+						<td style="width: 248px;" align="center">
+		        		  <a href="taxiyork/index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image433','','/images/apps/download_btn_h.png',1)"><img src="../images/apps/download_btn.png" name="Image433" border="0" id="Image433" height="58" width="169"></a>
+						</td>
+						<td style="width: 210px; padding-right:34px">
+						<table style="width: 100%" align="right">
+							<tr>
+								<td width="70" align="center">
+				        		  <a href="https://apps.apple.com/il/app/%D7%9E%D7%95%D7%A0%D7%99%D7%AA-%D7%9C%D7%9E%D7%99%D7%9C%D7%99%D7%95%D7%9F-%D7%A0%D7%99%D7%95-%D7%99%D7%95%D7%A8%D7%A7/id1517761274" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image01','','/images/apps/apple_btn_h.png',1)"><img src="../images/apps/apple_btn.png" name="Image11" border="0" id="Image01" height="48" width="42"></a>
+								</td>
+								<td align="center" style="width: 70px;">
+				        		  <a href="https://play.google.com/store/apps/details?id=com.mikmak.york&hl=he" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Imagea2','','/images/apps/android_btn_h.png',1)"><img src="../images/apps/android_btn.png" name="Imagea2" border="0" id="Imagea2" height="49" width="42"></a>
+								</td>
+								<td width="60" align="right" style="padding-right:10px">
+				        		  <a href="taxiyork/index-1.htm?download=1.1" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image431','','/images/apps/pc_btn_h.png',1)"><img src="../images/apps/pc_btn.png" name="Image431" border="0" id="Image431" height="48" width="46"></a>
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td width="190"></td>
+					</tr>
+				</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td height="37"></td>
+			</tr>	
+
+			<tr>
+				<td>
+				<table style="width: 708px; height:252px; background-image:url('../images/apps/mikmakpc.png');">
+					<tr><td height="130" style="width: 248px"></td></tr>									
+					<tr>
+						<td style="width: 248px" align="center">
+		        		  <a href="mikmakpc/index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image93','','/images/apps/download_btn_h.png',1)"><img src="../images/apps/download_btn.png" name="Image93" border="0" id="Image93" height="58" width="169"></a>
+						</td>
+						<td style="width: 210px; padding-right:34px">
+						<table style="width: 100%" align="right">
+							<tr>
+								<td width="60" align="right" style="padding-right:10px">
+				        		  <a href="mikmakpc/index-1.htm?download=1" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image91','','/images/apps/pc_btn_h.png',1)"><img src="../images/apps/pc_btn.png" name="Image91" border="0" id="Image91" height="48" width="46"></a>
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td width="190"></td>
+					</tr>
+				</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td height="37"></td>
+			</tr>	
+
+			<tr>
+				<td>
+				<table style="width: 708px; height:252px; background-image:url('../images/apps/miktok.png');">
+					<tr><td height="130" style="width: 248px"></td></tr>									
+					<tr>
+						<td style="width: 248px" align="center">
+		        		  <a href="miktok/index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image33','','/images/apps/download_btn_h.png',1)"><img src="../images/apps/download_btn.png" name="Image33" border="0" id="Image33" height="58" width="169"></a>
+						</td>
+						<td style="width: 210px; padding-right:34px">
+						<table style="width: 100%" align="right">
+							<tr>
+								<td width="70" align="right">
+				        		  <a href="https://itunes.apple.com/il/app/%D7%9E%D7%99%D7%A7%D7%98%D7%95%D7%A7/id1478896044?ls=1" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1231','','/images/apps/apple_btn_h.png',1)"><img src="../images/apps/apple_btn.png" name="Image1231" border="0" id="Image11" height="48" width="42"></a>
+								</td>
+								<td align="right" style="width: 60px;padding-right:10px">
+				        		  <a href="https://play.google.com/store/apps/details?id=com.dic.miktok" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image22','','/images/apps/android_btn_h.png',1)"><img src="../images/apps/android_btn.png" name="Image22" border="0" id="Image22" height="49" width="42"></a>
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td width="190"></td>
+					</tr>
+				</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td height="37"></td>
+			</tr>	
+
+			<tr>
+				<td>
+				<table style="width: 708px; height:252px; background-image:url('../images/apps/cab.png');">
+					<tr><td height="130" style="width: 248px"></td></tr>									
+					<tr>
+						<td style="width: 248px" align="center">
+		        		  <a href="taxicab/index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','/images/apps/download_btn_h.png',1)"><img src="../images/apps/download_btn.png" name="Image3" border="0" id="Image3" height="58" width="169"></a>
+						</td>
+						<td style="width: 210px; padding-right:34px">
+						<table style="width: 100%" align="right">
+							<tr>
+								<td width="70" align="right">
+				        		  <a href="https://itunes.apple.com/il/app/mwnyt-lmylywn/id1121167885?mt=8" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','/images/apps/apple_btn_h.png',1)"><img src="../images/apps/apple_btn.png" name="Image1" border="0" id="Image1" height="48" width="42"></a>
+								</td>
+								<td align="right" style="width: 60px; padding-right:10px">
+				        		  <a href="https://play.google.com/store/apps/details?id=com.mikmak.taxi" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image2','','/images/apps/android_btn_h.png',1)"><img src="../images/apps/android_btn.png" name="Image2" border="0" id="Image2" height="49" width="42"></a>
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td width="190"></td>
+					</tr>
+				</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			
+			<tr>
+				<td colspan="3" height="37"></td>
+			</tr>
+
+
+		<tr>
+				<td>
+				<table style="width: 708px; height:252px; background-image:url('../images/apps/mondo.png');">
+					<tr><td height="130" style="width: 248px"></td></tr>									
+					<tr>
+						<td style="width: 248px" align="center">
+		        		  <a href="mondo/index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image43','','/images/apps/download_btn_h.png',1)"><img src="../images/apps/download_btn.png" name="Image43" border="0" id="Image43" height="58" width="169"></a>
+						</td>
+						<td style="width: 210px; padding-right:34px">
+						<table style="width: 100%" align="right">
+							<tr>
+								<td width="70" align="right">
+				        		  &nbsp;</td>
+								<td align="right" style="width: 60px;padding-right:10px">
+				        		  <a href="https://play.google.com/store/apps/details?id=com.dic.mondofree" target="_blank" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image42','','/images/apps/android_btn_h.png',1)"><img src="../images/apps/android_btn.png" name="Image42" border="0" id="Image42" height="49" width="42"></a>
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td width="190"></td>
+					</tr>
+				</table>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+
+
+			</table>
+		</td>
+	</tr>      
+        
+    </table>
+  
+    </td>
+  </tr>
+</table>
+</div>
+    
+    </td>
+  </tr>
+
+</table>
+
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" class='tb_footer'>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="tb_footer_links">
+  <tr>
+    <td align="center">
+    <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="middle" class="footer_btn_4"><a href="../html/about.html" class="footer_link">אודות החברה&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+          <td width="4"></td>
+          <td valign="middle" class="footer_btn_5"><a href="../html/nagich.html" class="footer_link">נגישות</a></td>
+          <td width="4"></td>
+          <td valign="middle" class="footer_btn_3"><a href="../html/privacy.html" class="footer_link">מדיניות פרטיות</a></td>
+          <td width="4"></td>
+          <td valign="middle" class="footer_btn_2"><a href="../html/terms.html" class="footer_link">תנאי שימוש</a></td>
+          <td width="4"></td>
+          <td valign="middle" class="footer_btn_1"><a href="../html/contact.html" class="footer_link">צור קשר</a></td>          
+        </tr>
+        
+    </table></td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+
+
+
+	if (isMobile())
+	{		
+	    
+		    document.getElementById('bg_image').className='bg_image_mobile';		
+		    
+	}
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-11123125-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/javascript" src="../js/nagich.js"></script></body>
+</html>

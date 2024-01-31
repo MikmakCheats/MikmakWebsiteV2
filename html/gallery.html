@@ -1,0 +1,1335 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>מיקמק - הגלריה שלכם</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="קהילה – קהילת היוצרים של מיקמק – כל התמונות, הציורים, הסרטונים, השירים והסיפורים שלכם">
+  <meta name="keywords" content="מישחקים, משחקים, משחקים ברשת, משחקים לילדים, משחק, משחקי אונליין , משחקים בנות, Games, Webkinz, משחקים חדשים, משחקי בנות, מכוניות משחקים, אתר משחקים, אווטר, אוטר, אווטר משחקים, מיקמק, מיקמיק, מיקמיק עולם וירטואלי">
+<meta name="expires" content="never">
+<meta name="language" content="hebrew">
+<meta name="distribution" content="Global">
+<meta name="robots" content="index, follow">
+<link rel="SHORTCUT ICON" href="../favicon.ico">
+
+<link href="../css/global3.css" rel="stylesheet" type="text/css">	
+
+<link href="../css/blog.css" rel="stylesheet" type="text/css">
+  <script src="../js/dw_cookies.js" language="javascript"></script>
+  <script src="../js/ajax.js" language="javascript"></script>
+  <script src="../js/postAjax.js" language="javascript"></script>
+  <script src="../js/blog.js" language="javascript"></script>
+  <script>
+	function trim(str)
+	{ 
+	  while (str.charAt(0) == ' ')
+	    str = str.substring(1);
+	  while (str.charAt(str.length - 1) == ' ')
+	    str = str.substring(0, str.length - 1);
+	  return str;
+	}
+
+	 function hide_id(elementid) {
+		if (document.getElementById(elementid).style.display=='') {
+			document.getElementById(elementid).style.display = 'none';
+		} else {
+			document.getElementById(elementid).style.display = '';
+		}
+	 }
+	 
+	 function searchWorks()
+	 {
+	 	var author= trim(document.getElementById("author").value);
+
+	 	if (author=="")	 	
+	 	{
+	 		alert('יש להקליד שם מיקמק');
+	 	}
+	 	else if (author=="שם מיקמק" || author.indexOf("searchWorks")>=0) 	 	
+	 	{
+	 		alert('יש להקליד שם מיקמק');
+			document.getElementById("author").value="";	 		
+			document.getElementById("author").focus();	 		
+	 	}
+	 	else if (author.length<4 || author>55)	 	
+	 	{
+	 		alert('לא נמצאו יצירות לשם מיקמק זה.');
+	 	}
+	 	else
+	 	{
+			showBtnSearch(true);
+	 		location.href='/gallery?id=0&ctgId=0&author=' + author;
+	 	}	 
+	 }
+	 
+	var authorWorksNotFound= location.search.split('authorNotFound=')[1];
+	if (authorWorksNotFound=='true')
+	{
+		alert('לא נמצאו יצירות למיקמק זה. אנא נסה שם אחר.');
+		diaplyedAlready= true;
+	}
+	
+	function showBtnSearch(show)
+	{
+		document.getElementById("ImageSearch").style.display=(show ? 'none' : '');
+		document.getElementById("searchWait").style.display=(show ? '' : 'none');
+	}
+  </script>	
+</head>
+
+<body onload="showBtnSearch(false);">
+
+<table style="display:none" id="barMakeHP" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#0071ba">
+  <tr>
+    <td height="35" align="center" valign="top">
+     <table width="0%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+			<a href="#" onclick="setCookie('make_Mikmak_HP', 'true', 60);this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.mikmak.co.il');hide_id('barMakeHP');return false;">
+	        <img src="../images/hp_makeHomePage.gif" width="872" height="41">
+	        </a>
+	        </td>
+        <td>		
+        	<a href="#" onclick="hide_id('barMakeHP');return false;" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','/images/hp_close_btn_h.gif',1)"><img src="../images/hp_close_btn.gif" width="37" height="41" border="0" id="Image8"></a></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<script>
+	 if (document.all) //IE only
+	 {
+		if (getCookie('make_Mikmak_HP')==null)
+			hide_id('barMakeHP');
+	 }
+</script>
+<script type="text/javascript" src="../js/newPostVar.js"></script>
+<script type="text/javascript">
+	function MM_preloadImages() { //v3.0
+	  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+	    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+	    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+	}
+	function MM_swapImgRestore() { //v3.0
+	  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	}
+	function MM_findObj(n, d) { //v4.01
+	  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+	    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+	  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+	  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+	  if(!x && d.getElementById) x=d.getElementById(n); return x;
+	}	
+	function MM_swapImage() { //v3.0
+	  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+	   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+	}	
+
+	function isMobile() 
+	{
+		if( navigator.userAgent.match(/Android/i)
+		 || navigator.userAgent.match(/webOS/i)
+		 || navigator.userAgent.match(/iPhone/i)
+		 || navigator.userAgent.match(/iPad/i)
+		 || navigator.userAgent.match(/iPod/i)
+		 || navigator.userAgent.match(/BlackBerry/i)
+		 || navigator.userAgent.match(/Windows Phone/i)
+		 ){
+		    return true;
+		  }
+		 else {
+		    return false;
+		  }
+	}
+</script>
+
+<div id="menuSite" align="center" class="menuHTML">
+
+		<table style="width:100%;background-repeat:repeat-x; background-image:url('../images/mainheader_bg.png');" cellpadding="0" cellspacing="0" dir="rtl">
+			<tr>
+			
+				<td width="35%" style="padding-left:45px" align="left"> 
+				  <a href="http://play.mikmak.co.il" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('btnh0','','/images/play2_h.png',1)">
+				     <img id="btnh0" src="../images/play2.png" width="205" height="62" alt="התחל לשחק" style="padding-bottom:3px">
+				  </a>				
+				</td>
+
+				 <td align="center" width="35%"> 
+
+					   <table width="100%" align="center" style="padding-bottom:30px" cellpadding="2">
+					     <tr>
+					       <td width="120">
+							  <div style="width:11px; height:11px; position:relative; top:2px; right:37px;">
+							    <img id="saleNotification" style="display:none;" src="../images/notificationSmall.png" width="11" height="11">
+							  </div>
+							  <div style="position:relative; bottom:5px;">
+								  <a id="headerStore" href="../store/index.htm" class="mainHeader">חנות</a>
+							  </div>	  							  
+					       </td>
+					       <td width="160" style="min-width:70px;">
+							  <div style="width:11px; height:11px; position:relative; top:2px; right:67px;">
+							    <img id="blogNotification" style="display:none;" src="../images/notificationSmall.png" width="11" height="11">
+							  </div>
+							  <div style="position:relative; bottom:5px;">
+								  <a id="headerBlog" href="whatsnew.html" class="mainHeader">מה חדש</a>
+							  </div>	  
+					       </td>
+					       <td width="145">
+							  <a id="headerGallery" href="gallery.html" class="mainHeader">קהילה</a>
+					       </td>
+					       <td width="160">
+							  <a id="headerApps" href="../apps/index.htm" class="mainHeader">אפליקציות</a>
+					       </td>
+					       <td width="140">
+							  <a id="headerMembers" href="../servlet/productList?ctg=2&src=site_headerS" class="mainHeader">מנויים</a>
+					       </td>
+					       <td width="140">
+							  <a id="headerParents" href="parents/index.htm" class="mainHeader">הורים</a>
+					       </td>
+					       <td width="150">
+							  <a id="headerHelp" href="help/faq.html" class="mainHeader">
+							   עזרה
+							  </a>
+					       </td>
+				        </tr>
+				   </table>
+				 </td>
+
+				<td width="30%" align="right" style="padding-right:10px;">
+				  <a href="../index.htm">
+				   <img id="btnh7" src="../images/logo2.png" width="260" height="130" alt="מיקמק">
+				  </a>
+				</td>
+    	  </tr>
+    	 </table> 
+	</div>
+
+
+<script>	
+  if (saleday || newPost)
+  {
+     if (saleday)
+       document.getElementById("saleNotification").style.display='';
+     if (newPost)
+       document.getElementById("blogNotification").style.display='';
+  }
+
+
+  document.getElementById("headerGallery").className= "mainHeader mainHeaderHover";
+</script>
+<div id="sub_menu" class="sub_menu">
+          <a id="subheaderIndex" href="gallery.html" class="sub_menu_link">
+		  <span>ראשי</span></a> <span class="del">|</span>
+
+          <a id="subheaderDoll" href="../gallery-7?id=0&ctgId=8" class="sub_menu_link">
+          הבובה שלי</a> <span class="del">|</span>
+
+          <a id="subheaderShirt" href="../gallery-8?id=0&ctgId=9" class="sub_menu_link">
+          החולצה שלי</a> <span class="del">|</span>
+
+          <a id="subheaderTV" href="../gallery-9?id=0&ctgId=7" class="sub_menu_link">
+          הסדרה</a> <span class="del">|</span>
+
+          <a id="subheaderDrawing" href="../gallery-10?id=0&ctgId=1" class="sub_menu_link">
+          ציורים</a> <span class="del">|</span>
+            
+          <a id="subheaderStory" href="../gallery-11?id=0&ctgId=5" class="sub_menu_link">
+          סיפורים ושירים</a> <span class="del">|</span>
+
+          <a id="subheaderPresnt" href="../gallery-12?id=0&ctgId=6" class="sub_menu_link">
+          מצגות</a> <span class="del">|</span>
+
+          <a id="subheaderSend" href="../jsp/gallery/send.jsp" class="sub_menu_link">
+          שלחו לנו</a>
+    </div>
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="tb_center">
+  <tr>
+    <td align="right"> 
+     <span class="page_title">קהילה - ציורים, צילומים, עיצובים, קומיקסים, מצגות, סיפורים ושירים שלכם&nbsp;</span>
+    <table border="0" cellpadding="0" cellspacing="0" class="td_title" width="800">
+  <tr>
+    <td valign="top">
+    
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+
+    <td align="center" valign="top" width="200">
+      <table border="0" cellspacing="0" cellpadding="0" width="174">         
+
+
+        <tr>
+          <td align="center">
+
+          <table width="0%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right" valign="top" class="blog_side_block_blue2" dir="rtl"><span class="block_side_block_title">&nbsp;חיפוש יצירות</span></td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="block_side_block_blue2_contents"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                <tr></tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="50" align="center" valign="middle" class="block_side_block_blue2_contents" dir="rtl">
+              		<input id="author" name="author" type="text" value="שם מיקמק" style="width:130px;font-size:14px;font-weight:200;color:#3067FF" maxlength="55" onfocus="this.value='';" onkeypress="if (event.keyCode==13) searchWorks();">
+                </td>
+            </tr>
+            <tr>
+              <td height="25" align="center" valign="middle" class="block_side_block_blue2_contents" dir="rtl">
+					<a href="javascript:searchWorks();" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('ImageSearch','','/images/btn_search_h.png',1)"><img src="../images/btn_search.png" name="ImageSearch" width="63" height="23" border="0" id="ImageSearch"></a>              		
+					<span style="display:none" id="searchWait">אנא המתן..</span>
+                </td>
+            </tr>
+            <tr>
+              <td align="right" valign="top" class="blog_side_bottom_blue2"></td>
+            </tr>
+
+          </table>
+
+          
+          </td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td>
+          <a href="../jsp/gallery/send-1.jsp?ref=site_gallery_index" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('imgAdd','','/images/gallery/add_btn_h.png',1)">
+          <img id="imgAdd" src="../images/gallery/add_btn.png" width="174" height="55"></a></td>
+        </tr>
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td align="left">
+				<table width="0%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right" valign="top" class="blog_side_block_green" dir="rtl"><span class="block_side_block_title">&nbsp;
+              
+              	תמונת היום
+              </span></td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="block_side_block_green_contents"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                <tr></tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="155" align="center" valign="middle" class="block_side_block_green_contents">
+                <a href="../gallery-13?id=799874&ctgId=13">
+                	<img src="../media/gallery/799/799874/main/799874_t158.jpg" width="158" height="139">
+		            </a>
+                </td>
+            </tr>
+            <tr>
+              <td height="29" align="left" valign="middle" class="block_side_block_green_contents">
+                <a align="left" class="blog_side_block_link" href="../gallery-13?id=799874&ctgId=13">
+                    <img src="../images/more_arrow.gif" width="18" height="15" align="absmiddle"> עוד</a></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top" class="block_side_block_shadow">&nbsp; </td>
+            </tr>
+          </table>
+</td>
+        </tr>
+
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td align="left">
+				<table width="0%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right" valign="top" class="blog_side_block_green" dir="rtl"><span class="block_side_block_title">&nbsp;
+              
+              	כתב אורח
+              </span></td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="block_side_block_green_contents"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                <tr></tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="155" align="center" valign="middle" class="block_side_block_green_contents">
+                <a href="../gallery-14?id=792473&ctgId=5">
+                	<img src="../images/reporters/13832661.jpg" width="158" height="139">
+		            </a>
+                </td>
+            </tr>
+            <tr>
+              <td height="29" align="left" valign="middle" class="block_side_block_green_contents">
+                <a align="left" class="blog_side_block_link" href="../gallery-14?id=792473&ctgId=5">
+                    <img src="../images/more_arrow.gif" width="18" height="15" align="absmiddle"> עוד</a></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top" class="block_side_block_shadow">&nbsp; </td>
+            </tr>
+          </table>
+</td>
+        </tr>
+
+        <tr>
+          <td height="2"></td>
+        </tr>
+        <tr>
+          <td align="left">
+				<table width="0%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right" valign="top" class="blog_side_block_green"><span class="block_side_block_title" style="font-size:14px">&nbsp;מיקשימה חודשית - הזוכים</span></td>
+            </tr>
+            <tr>
+
+              <td height="155" align="center" valign="middle" class="block_side_block_green_contents" dir="rtl">
+
+			 <br>
+	              <b>לילי92694</b><br>
+
+                 <a href="../gallery-2?id=796990&ctgId=17&ref=blog_miksima"><img src="../media/gallery/796/796990/main/796990_t158.jpg" width="158" height="139"></a>
+	             <br><br>
+				  <b>אקסל5706</b><br>
+
+                 <a href="../gallery-3?id=796387&ctgId=17&ref=blog_miksima"><img src="../media/gallery/796/796387/main/796387_t158.jpg" width="158" height="139"></a>
+	             <br><br>
+				  <b>נויה47297</b><br>
+
+                 <a href="../gallery-4?id=796282&ctgId=17&ref=blog_miksima"><img src="../media/gallery/796/796282/main/796282_t158.jpg" width="158" height="139"></a>
+	             <br><br>
+				  <b>עדן04321</b><br>
+
+                 <a href="../gallery-5?id=796439&ctgId=17&ref=blog_miksima"><img src="../media/gallery/796/796439/main/796439_t158.jpg" width="158" height="139"></a>
+	             <br><br>
+				  <b>עדי64230</b><br>
+
+                 <a href="../gallery-6?id=796933&ctgId=17&ref=blog_miksima"><img src="../media/gallery/796/796933/main/796933_t158.jpg" width="158" height="139"></a>
+	             </td>
+            </tr>
+            <tr>
+              <td align="center" valign="top" class="block_side_block_green_contents"><table width="95%" border="0" cellspacing="0" cellpadding="0">
+                <tr></tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td height="29" align="left" valign="middle" class="block_side_block_green_contents"><br>
+                <a align="left" class="blog_side_block_link" href="gallery/contestWinnersIndex_17.html?ref=blog_miksima">
+                    <img src="../images/more_arrow.gif" width="18" height="15" align="absmiddle"> לכל הזוכים</a></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top" class="block_side_block_shadow">&nbsp; </td>
+            </tr>
+          </table>
+</td>
+        </tr>
+        
+		
+      </table>
+	</td>
+	<td width="45">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+    <td align="center" valign="top" width="600">
+     
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+
+
+
+	<tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">מיקשימה חודשית&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-15?id=800011&ctgId=17">
+                                       <img src="../media/gallery/800/800011/main/800011_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-16?id=799956&ctgId=17">
+                                       <img src="../media/gallery/799/799956/main/799956_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-17?id=799944&ctgId=17">
+                                       <img src="../media/gallery/799/799944/main/799944_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+					<tr>
+                         <td colspan="3" align="center" height="45" valign="bottom" dir="ltr">
+                         <table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+			                   <td height="45" width="%" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-17?id=799944&ctgId=17" class="blog_normal_link">עוד יצירות <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+			                   <td height="45" width="30%" align="right" valign="middle" class="blog_info_text" dir="rtl"><a href="gallery/contestWinnersIndex_17-1.html" class="blog_normal_link">רשימת הזוכים <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                     </table>
+                  </td>
+                </tr>
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              </table>
+            </td>
+        </tr>
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+    <tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">ציורים/צילומים שלכם&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc" style="padding-left:17px">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-18?id=800027&ctgId=1">
+                                       <img src="../media/gallery/800/800027/main/800027_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-19?id=800026&ctgId=1">
+                                       <img src="../media/gallery/800/800026/main/800026_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-20?id=800025&ctgId=1">
+                                       <img src="../media/gallery/800/800025/main/800025_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+                       <tr>
+                         <td colspan="3" align="center" height="45" valign="bottom"><table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+			                   <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-20?id=800025&ctgId=1" class="blog_normal_link">עוד תמונות <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                    </table>
+                  </td>
+                </tr>
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              </table>
+            
+            
+        
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      
+
+
+	<tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">מיק קומיקס&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-21?id=800012&ctgId=3">
+                                       <img src="../media/gallery/800/800012/main/800012_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-22?id=799976&ctgId=3">
+                                       <img src="../media/gallery/799/799976/main/799976_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-23?id=799920&ctgId=3">
+                                       <img src="../media/gallery/799/799920/main/799920_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+                       <tr>
+                         <td colspan="3" align="center" height="45" valign="bottom">
+                         <table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+			                   <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-23?id=799920&ctgId=3" class="blog_normal_link">עוד תמונות <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                    
+                  
+                
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              
+            
+            
+        
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+    <tr>
+          <td align="center" valign="top">
+           <table width="500" border="0" cellspacing="0" cellpadding="0">
+             <tr>
+               <td align="right" class="td_blog_box_top"><table width="96%" border="0" cellspacing="0" cellpadding="0">
+                 <tr>
+                   <td align="right" class="title_small">סיפורים ושירים&nbsp;</td>
+                 </tr>
+                 <tr>
+                   <td align="right" class="blog_desc">
+                    <table width="465" border="0" cellspacing="0" cellpadding="2">
+                     <tr>
+                       <td rowspan="8" align="left"><img src="../images/comunity_stories.gif" width="119" height="107"></td>
+                     </tr>
+	                <tr>
+	                  <td height="6"></td>
+	                </tr>										  
+
+					<tr>
+		                       <td align="right" valign="middle" height="18" dir="rtl"><a class="blog_normal_link" href="../gallery-24?id=800028&ctgId=5">קראו תיאור</a></td>
+	                       <td align="right" valign="middle"></td>
+	                     </tr>
+					<tr>
+		                       <td align="right" valign="middle" height="18" dir="rtl"><a class="blog_normal_link" href="../gallery-25?id=799953&ctgId=5">"לא מסוגלת"/ חלק א' סיפור לכתב אורח</a></td>
+	                       <td align="right" valign="middle"></td>
+	                     </tr>
+					<tr>
+		                       <td align="right" valign="middle" height="18" dir="rtl"><a class="blog_normal_link" href="../gallery-26?id=799951&ctgId=5">כתב אורח</a></td>
+	                       <td align="right" valign="middle"></td>
+	                     </tr>
+					<tr>
+		                       <td align="right" valign="middle" height="18" dir="rtl"><a class="blog_normal_link" href="../gallery-27?id=799950&ctgId=5">סיפור לכתב אורח</a></td>
+	                       <td align="right" valign="middle"></td>
+	                     </tr>
+					<tr>
+		                       <td align="right" valign="middle" height="18" dir="rtl"><a class="blog_normal_link" href="../gallery-28?id=799949&ctgId=5">מנסה ליכתוב שוב לכתב אורח!!!</a></td>
+	                       <td align="right" valign="middle"></td>
+	                     </tr>
+					<tr>
+		                       <td align="right" valign="middle" height="18" dir="rtl"><a class="blog_normal_link" href="../gallery-29?id=799869&ctgId=5">חלוקת מתנותת!!!</a></td>
+	                       <td align="right" valign="middle"></td>
+	                     </tr>
+					</table></td>
+                 </tr>
+                   <tr>
+                     <td colspan="3" height="45" align="center" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="1">
+                       <tr>
+		                   <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-29?id=799869&ctgId=5" class="blog_normal_link">עוד סיפורים ושירים <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                       </tr>
+                     </table></td>
+                   </tr>
+
+               </table></td>
+             </tr>
+             <tr>
+               <td class="td_blog_box_bottom"></td>
+             </tr>
+           </table>          
+          
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+
+        <tr>
+          <td align="center" valign="top">
+           <table width="500" border="0" cellspacing="0" cellpadding="0">
+             <tr>
+               <td align="right" class="td_blog_box_top"><table width="96%" border="0" cellspacing="0" cellpadding="0">
+                 <tr>
+                   <td align="right" class="title_small">מצגות ומסמכים&nbsp;</td>
+                 </tr>
+                 <tr>
+                   <td align="right" class="blog_desc"><table width="465" border="0" cellspacing="0" cellpadding="2">
+                     <tr>
+                       <td rowspan="8" align="left"><img src="../images/comunity_art.gif" alt="" width="120" height="152"></td>
+                     </tr>
+	                <tr>
+	                  <td height="6"></td>
+	                </tr>										  
+
+						<tr>
+				                   <td align="right" valign="middle" dir="rtl"><a href="../gallery-30?id=799898&ctgId=6" class="blog_normal_link">יאוו לא עשיתי יצירה שנהה</a></td>
+			                   <td align="right" valign="middle"><img src="../images/icon_file_pptx.jpg" width="15" height="20" align="middle"></td>
+			                 </tr>
+
+					<tr>
+				                   <td align="right" valign="middle" dir="rtl"><a href="../gallery-31?id=799889&ctgId=6" class="blog_normal_link">ציירתי עוגיה</a></td>
+			                   <td align="right" valign="middle"><img src="../images/icon_file_docx.jpg" width="15" height="20" align="middle"></td>
+			                 </tr>
+
+					<tr>
+				                   <td align="right" valign="middle" dir="rtl"><a href="../gallery-32?id=799888&ctgId=6" class="blog_normal_link">למקשימה החודשית</a></td>
+			                   <td align="right" valign="middle"><img src="../images/icon_file_docx.jpg" width="15" height="20" align="middle"></td>
+			                 </tr>
+
+					<tr>
+				                   <td align="right" valign="middle" dir="rtl"><a href="../gallery-33?id=799781&ctgId=6" class="blog_normal_link">מיקמקית בחום ובקור</a></td>
+			                   <td align="right" valign="middle"><img src="../images/icon_file_pptx.jpg" width="15" height="20" align="middle"></td>
+			                 </tr>
+
+					<tr>
+				                   <td align="right" valign="middle" dir="rtl"><a href="../gallery-34?id=799774&ctgId=6" class="blog_normal_link">חידה!!!</a></td>
+			                   <td align="right" valign="middle"><img src="../images/icon_file_docx.jpg" width="15" height="20" align="middle"></td>
+			                 </tr>
+
+					<tr>
+				                   <td align="right" valign="middle" dir="rtl"><a href="../gallery-35?id=799618&ctgId=6" class="blog_normal_link">שאלה יומית</a></td>
+			                   <td align="right" valign="middle"><img src="../images/icon_file_docx.jpg" width="15" height="20" align="middle"></td>
+			                 </tr>
+
+					</table></td>
+                 </tr>
+
+                   <tr>
+                     <td colspan="3" align="center" height="45" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="1">
+                       <tr>
+		                     <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-35?id=799618&ctgId=6" class="blog_normal_link">עוד מצגות ומסמכים <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                       </tr>
+                     </table></td>
+                   </tr>
+
+               </table></td>
+             </tr>
+             <tr>
+               <td class="td_blog_box_bottom"></td>
+             </tr>
+           </table>         
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+
+
+	<tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">מסיבות, הזמנות ואירועים בעולם של מיקמק&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-36?id=799922&ctgId=13">
+                                       <img src="../media/gallery/799/799922/main/799922_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-37?id=799914&ctgId=13">
+                                       <img src="../media/gallery/799/799914/main/799914_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-13?id=799874&ctgId=13">
+                                       <img src="../media/gallery/799/799874/main/799874_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+					<tr>
+                         <td colspan="3" align="center" height="45" valign="bottom">
+                           <table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+				                   <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-13?id=799874&ctgId=13" class="blog_normal_link">עוד תמונות <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                     
+                  
+                
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              
+            
+        
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">הבובה שלי&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-38?id=366695&ctgId=8">
+                                       <img src="../media/gallery/366/366695/main/366695_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-39?id=362967&ctgId=8">
+                                       <img src="../media/gallery/362/362967/main/362967_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-40?id=362954&ctgId=8">
+                                       <img src="../media/gallery/362/362954/main/362954_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+					<tr>
+                         <td colspan="3" align="center" height="45" valign="bottom" dir="ltr">
+                         <table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+			                   <td height="45" width="%" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-40?id=362954&ctgId=8" class="blog_normal_link">עוד תמונות <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+			                   <td height="45" width="30%" align="right" valign="middle" class="blog_info_text" dir="rtl"><a href="gallery/contestWinnersIndex.html" class="blog_normal_link">רשימת הזוכים <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                     
+                  
+                
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              
+            
+        
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">עיצובי פריטים&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-41?id=800029&ctgId=12">
+                                       <img src="../media/gallery/800/800029/main/800029_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-42?id=800018&ctgId=12">
+                                       <img src="../media/gallery/800/800018/main/800018_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-43?id=800007&ctgId=12">
+                                       <img src="../media/gallery/800/800007/main/800007_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+                       <tr>
+                         <td colspan="3" align="center" height="45" valign="bottom"><table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+				                   <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-43?id=800007&ctgId=12" class="blog_normal_link">עוד תמונות <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                    
+                  
+                
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              
+            
+            
+        
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">יצירות למיקמקון&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-44?id=799998&ctgId=11">
+                                       <img src="../media/gallery/799/799998/main/799998_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-45?id=799818&ctgId=11">
+                                       <img src="../media/gallery/799/799818/main/799818_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-46?id=799551&ctgId=11">
+                                       <img src="../media/gallery/799/799551/main/799551_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+                       <tr>
+                         <td colspan="3" align="center" height="45" valign="bottom"><table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+			                   <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-46?id=799551&ctgId=11" class="blog_normal_link">עוד <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                    
+                  
+                
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              
+            
+            
+        
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+    <tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">העולם שלי במיקמק&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-47?id=799686&ctgId=15">
+                                       <img src="../media/gallery/799/799686/main/799686_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-48?id=799532&ctgId=15">
+                                       <img src="../media/gallery/799/799532/main/799532_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-49?id=799095&ctgId=15">
+                                       <img src="../media/gallery/799/799095/main/799095_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+					<tr>
+                         <td colspan="3" align="center" height="45" valign="bottom">
+                         <table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+			                   <td height="45" width="100%" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-49?id=799095&ctgId=15" class="blog_normal_link">עוד תמונות <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                     
+                  
+                
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              
+            
+        
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">הסדרה - 
+					  ציורים/צילומים&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-50?id=799827&ctgId=7">
+                                       <img src="../media/gallery/799/799827/main/799827_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-51?id=799480&ctgId=7">
+                                       <img src="../media/gallery/799/799480/main/799480_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-52?id=797529&ctgId=7">
+                                       <img src="../media/gallery/797/797529/main/797529_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+                       <tr>
+                         <td colspan="3" align="center" height="45" valign="bottom"><table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+			                   <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-52?id=797529&ctgId=7" class="blog_normal_link">עוד תמונות <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                    
+                  
+                
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              
+            
+            
+        
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">סרטוני וידאו&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161" height="100">
+                                   <a href="../gallery-53?id=798898&ctgId=14">
+                                       <img src="../vi/yDI2_eMi7Wc/0.jpg" width="150" height="139">
+                                   </a>
+	                                 <div style="position:absolute; margin-top:-95px; margin-left:48px;">
+	                                   <a href="../gallery-53?id=798898&ctgId=14">
+	                                       <img src="../images/gallery/play.png" width="50" height="50">
+	                                   </a>    
+	                                 </div>
+                                 </td>       
+						<td width="161" height="100">
+                                   <a href="../gallery-54?id=798826&ctgId=14">
+                                       <img src="../vi/nwGkzpqXOd0/0.jpg" width="150" height="139">
+                                   </a>
+	                                 <div style="position:absolute; margin-top:-95px; margin-left:48px;">
+	                                   <a href="../gallery-54?id=798826&ctgId=14">
+	                                       <img src="../images/gallery/play.png" width="50" height="50">
+	                                   </a>    
+	                                 </div>
+                                 </td>       
+						<td width="161" height="100">
+                                   <a href="../gallery-55?id=798798&ctgId=14">
+                                       <img src="../vi/TtGU0a1acL8/0.jpg" width="150" height="139">
+                                   </a>
+	                                 <div style="position:absolute; margin-top:-95px; margin-left:48px;">
+	                                   <a href="../gallery-55?id=798798&ctgId=14">
+	                                       <img src="../images/gallery/play.png" width="50" height="50">
+	                                   </a>    
+	                                 </div>
+                                 </td>       
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+					<tr>
+                         <td colspan="3" align="center" height="45" valign="bottom">
+                           <table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+				                   <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl"><a href="../gallery-55?id=798798&ctgId=14" class="blog_normal_link">עוד סרטונים <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                     
+                  
+                
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              
+            
+        
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            
+            <table width="500" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="right" class="td_blog_box_top">
+                  <table width="96%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td align="right" class="title_small">המסע לכוכב המינימיקים - תחרות צילומים, שירים, סיפורים ועוד&nbsp;</td>
+                      </tr>
+                    <tr>
+                      <td align="right" class="blog_desc">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="1" style="padding-left:17px">
+		                <tr>
+		                  <td height="6"></td>
+		                </tr>										  
+
+						<td width="161">
+                                   <a href="../gallery-56?id=338303&ctgId=16">
+                                       <img src="../media/gallery/338/338303/main/338303_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-57?id=338034&ctgId=16">
+                                       <img src="../media/gallery/338/338034/main/338034_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						<td width="161">
+                                   <a href="../gallery-58?id=321621&ctgId=16">
+                                       <img src="../media/gallery/321/321621/main/321621_t158.jpg" width="158" height="139">
+                                   </a>
+                                 </td>
+                               
+						</table></td></tr>
+</table></td></tr>
+                        </table></td>
+                      </tr>
+                       <tr>
+                         <td colspan="3" align="center" height="45" valign="bottom">
+                           <table width="92%" border="0" cellspacing="0" cellpadding="1">
+                           <tr>
+			                   <td height="45" align="left" valign="middle" class="blog_info_text" dir="rtl" style="width: 102px"><a href="../gallery-58?id=321621&ctgId=16" class="blog_normal_link">עוד <img src="../images/arrow_blue.png" alt="" width="17" height="16" align="absmiddle"></a></td>
+		                      <td height="45" align="center" valign="middle" class="blog_info_text" dir="rtl"><a href="../movie/index.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1641','','/images/btnMovie_h.png',1)"><img src="../images/btnMovie.png" name="Image1641" width="124" height="29" border="0" id="Image1641"></a>&nbsp;&nbsp; </td>
+                           </tr>
+                         </table>
+                         </td>
+                       </tr>
+                    
+                  
+                
+              <tr>
+                <td class="td_blog_box_bottom"></td>
+                </tr>
+              
+            
+            
+        
+        
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+    <tr>
+          <td align="right" valign="top">&nbsp;</td>
+        </tr>
+      
+      
+  
+
+ 
+    
+  
+
+ 	
+    
+  
+
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" class='tb_footer'>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+<table border="0" align="center" cellpadding="0" cellspacing="0" class="tb_footer_links">
+  <tr>
+    <td align="center">
+    <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="middle" class="footer_btn_4"><a href="about.html" class="footer_link">אודות החברה&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></td>
+          <td width="4"></td>
+          <td valign="middle" class="footer_btn_5"><a href="nagich.html" class="footer_link">נגישות</a></td>
+          <td width="4"></td>
+          <td valign="middle" class="footer_btn_3"><a href="privacy.html" class="footer_link">מדיניות פרטיות</a></td>
+          <td width="4"></td>
+          <td valign="middle" class="footer_btn_2"><a href="terms.html" class="footer_link">תנאי שימוש</a></td>
+          <td width="4"></td>
+          <td valign="middle" class="footer_btn_1"><a href="contact.html" class="footer_link">צור קשר</a></td>          
+        </tr>
+        
+    </table></td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+
+
+	   document.getElementById("subheaderIndex").className= "subMenuLink subMenuHover";
+
+
+	if (isMobile())
+	{		
+	        
+	}
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-11123125-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/javascript" src="../js/nagich.js"></script></body>
+</html>
